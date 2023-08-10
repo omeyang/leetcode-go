@@ -68,6 +68,9 @@ func Test_threeSum(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := threeSum(tt.args.nums); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("threeSum() = %v, want %v", got, tt.want)
+				spew.Dump(got)
+				spew.Dump(tt.want)
+
 			}
 		})
 	}

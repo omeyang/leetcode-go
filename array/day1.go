@@ -60,8 +60,9 @@ func compareMin(curr, data int) int {
 时间复杂度  O(n²)
 空间复杂度  O(1)
 */
-func threeSum(nums []int) (ans [][]int) {
+func threeSum(nums []int) [][]int {
 	sort.Ints(nums)
+	ans := [][]int{}
 	for index, value := range nums[:len(nums)-2] {
 		if value > 0 {
 			break
