@@ -1,1 +1,1 @@
-package arrayt
+package array

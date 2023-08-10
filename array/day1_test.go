@@ -1,6 +1,7 @@
 package array
 
 import (
+	"github.com/davecgh/go-spew/spew"
 	"reflect"
 	"testing"
 )
@@ -112,6 +113,7 @@ func Test_twoSum2(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := twoSum2(tt.args.nums, tt.args.target); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("twoSum() = %v, want %v", got, tt.want)
+				spew.Dump(got)
 			}
 		})
 	}
